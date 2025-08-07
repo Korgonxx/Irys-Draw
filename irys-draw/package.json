@@ -1,0 +1,41 @@
+{
+  "name": "irys-draw",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:socket\" \"npm run dev:next\"",
+    "dev:next": "next dev --turbopack",
+    "dev:socket": "node socket-server.js",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@irys/sdk": "^0.2.11",
+    "@tanstack/react-query": "^5.84.1",
+    "@web3modal/siwe": "^5.1.11",
+    "@web3modal/wagmi": "^5.1.11",
+    "fabric": "^6.7.1",
+    "konva": "^9.3.22",
+    "next": "15.4.6",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-konva": "^19.0.7",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "viem": "^2.33.3",
+    "wagmi": "^2.16.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "concurrently": "^9.2.0",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.6",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
